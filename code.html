@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقع تفاعلي</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+
+    <!-- الهيدر -->
+    <header>
+        <h1>مرحبًا بك في الموقع التفاعلي</h1>
+    </header>
+
+    <!-- زر لفتح النافذة المنبثقة -->
+    <button id="popupBtn">افتح النافذة المنبثقة</button>
+
+    <!-- النافذة المنبثقة -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" id="closeBtn">&times;</span>
+            <h2>مرحبًا! هذه نافذة منبثقة</h2>
+            <p>يمكنك إغلاق هذه النافذة من خلال الضغط على زر الإغلاق أو خارج النافذة.</p>
+        </div>
+    </div>
+
+    <!-- نموذج إدخال اسم -->
+    <section class="form-section">
+        <h2>أدخل اسمك</h2>
+        <form id="nameForm">
+            <input type="text" id="nameInput" placeholder="أدخل اسمك هنا" required>
+            <button type="submit">أرسل</button>
+        </form>
+        <p id="nameDisplay"></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
